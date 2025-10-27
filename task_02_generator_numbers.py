@@ -12,10 +12,7 @@ def generator_numbers(text: str):
 
 def sum_profit(text: str, func: Callable):
     '''Function that sums up all floating-point numbers extracted by the generator function.'''
-    total = 0
-    for number in func(text):
-        total += number
-    return total
+    return sum(func(text))
 
 
 text = '''Загальний дохід працівника складається з декількох частин: 1000.01 як
